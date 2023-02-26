@@ -1,0 +1,50 @@
+Flat profile:
+
+Each sample counts as 0.01 seconds.
+  %   cumulative   self              self     total           
+ time   seconds   seconds    calls  ms/call  ms/call  name    
+100.38      0.26     0.26        1   260.99   260.99  jacobitr
+  0.00      0.26     0.00        1     0.00     0.00  initu2_1
+  0.00      0.26     0.00        1     0.00     0.00  initu2_2
+  0.00      0.26     0.00        1     0.00     0.00  rightboundry
+  0.00      0.26     0.00        1     0.00     0.00  upperboundry
+  0.00      0.26     0.00        1     0.00     0.00  writefile
+
+			Call graph
+
+
+granularity: each sample hit covers 2 byte(s) for 3.83% of 0.26 seconds
+
+index % time    self  children    called     name
+                0.26    0.00       1/1           main [2]
+[1]    100.0    0.26    0.00       1         jacobitr [1]
+-----------------------------------------------
+                                                 <spontaneous>
+[2]    100.0    0.00    0.26                 main [2]
+                0.26    0.00       1/1           jacobitr [1]
+                0.00    0.00       1/1           upperboundry [6]
+                0.00    0.00       1/1           initu2_2 [4]
+                0.00    0.00       1/1           rightboundry [5]
+                0.00    0.00       1/1           initu2_1 [3]
+                0.00    0.00       1/1           writefile [7]
+-----------------------------------------------
+                0.00    0.00       1/1           main [2]
+[3]      0.0    0.00    0.00       1         initu2_1 [3]
+-----------------------------------------------
+                0.00    0.00       1/1           main [2]
+[4]      0.0    0.00    0.00       1         initu2_2 [4]
+-----------------------------------------------
+                0.00    0.00       1/1           main [2]
+[5]      0.0    0.00    0.00       1         rightboundry [5]
+-----------------------------------------------
+                0.00    0.00       1/1           main [2]
+[6]      0.0    0.00    0.00       1         upperboundry [6]
+-----------------------------------------------
+                0.00    0.00       1/1           main [2]
+[7]      0.0    0.00    0.00       1         writefile [7]
+-----------------------------------------------
+
+Index by function name
+
+   [3] initu2_1                [1] jacobitr                [6] upperboundry
+   [4] initu2_2                [5] rightboundry            [7] writefile
