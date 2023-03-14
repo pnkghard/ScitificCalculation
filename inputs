@@ -1,0 +1,7 @@
+n_cell = 1000
+max_grid_size = 500
+
+nsteps = 10000
+plot_int = 100
+
+dt = 1.e-5
